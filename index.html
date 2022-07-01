@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Navigation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="circle-container">
+            <div class="circle">
+                <button id="open">
+                    <i class="fa-solid fa-bars"></i>                
+                </button>
+                <button id="close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Coffee</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, hic? Corrupti asperiores id voluptatibus nihil facilis nemo? Explicabo voluptatum reiciendis officiis est omnis animi ipsam nostrum? Inventore nemo voluptate aliquam voluptatibus, eligendi quod quaerat fugiat quam tempora. Ab eaque veritatis ad temporibus alias accusantium tempora minima provident iusto nesciunt laborum dignissimos soluta laboriosam assumenda rerum, modi quos voluptate? Adipisci in deleniti quae vel sapiente quos est ratione quibusdam, accusamus saepe error maxime ducimus veritatis nostrum distinctio quisquam similique magnam qui eveniet magni voluptates eaque numquam architecto aspernatur? Inventore molestias non quaerat alias, aliquid cum natus eaque expedita nisi ad ipsa.</p>
+
+            <img src="https://images.pexels.com/photos/2878712/pexels-photo-2878712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae necessitatibus explicabo ab! Vel corporis dolores dolorem quia quae doloribus, quas ut deleniti culpa maxime tempore quos laudantium, eius iste ipsum incidunt! Sed vitae neque, cum odit minus placeat quam! Id facere eius labore corrupti repellat nemo excepturi quisquam perspiciatis fugit vero dolore culpa quia recusandae incidunt beatae, velit perferendis ullam et fugiat voluptate odio nulla voluptatibus. Temporibus corrupti, animi consectetur incidunt necessitatibus eum similique itaque.</p>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"><a href="#">Home</a></i></li>
+            <li><i class="fa-solid fa-user"><a href="#">About</a></i></li>
+            <li><i class="fa-solid fa-envelope"></i><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        const open = document.getElementById("open")
+        const close = document.getElementById("close")
+        const container = document.querySelector(".container")
+
+        open.addEventListener("click", () => container.classList.add("show-nav"))
+
+        close.addEventListener("click", () => container.classList.remove("show-nav"))
+        
+    </script>
+</body>
+</html>
